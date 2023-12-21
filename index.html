@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- задания с 1-14 -->
+    <!-- // №1 -->
+    <input type="number" id="squareSide" placeholder="Сторона квадрата">
+    <button onclick="GeometryFunctions.Square()">Вычислить квадрат</button>
+    <div id="squareResult"></div>
+
+    <input type="number" id="rectangleLength" placeholder="Длина прямоугольника">
+    <input type="number" id="rectangleWidth" placeholder="Ширина прямоугольника">
+    <button onclick="GeometryFunctions.Rectangle()">Вычислить прямоугольник</button>
+    <div id="rectangleResult"></div>
+
+    <input type="number" id="circleRadius" placeholder="Радиус круга">
+    <button onclick="GeometryFunctions.Circle()">Вычислить круг</button>
+    <div id="circleResult"></div>
+
+    <input type="number" id="triangleSideA" placeholder="Сторона A">
+    <input type="number" id="triangleSideB" placeholder="Сторона B">
+    <input type="number" id="triangleSideC" placeholder="Сторона C">
+    <button onclick="GeometryFunctions.Triangle()">Вычислить треугольник</button>
+    <div id="triangleResult"></div>
+    <script type="javascript" src="js.js"></script>
+    <!-- // №3 -->
+    <style>
+        td {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .hidden {
+            background-color: #ccc;
+        }
+        .found {
+            background-color: #0f0;
+        }
+    </style>
+
+
+<table id="game"></table>
+<script type="javascript" src="js.js"></script>
+ <!-- // №4 -->
+ <style>
+    td {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .hidden {
+        background-color: #ccc;
+    }
+    .found {
+        background-color: #0f0;
+    }
+
+</style>
+
+<h1>Игра Угадай ячейку</h1>
+<button onclick="startGame()">Начать игру</button>
+<p id="timer"></p>
+<table id="game"></table>
+<script type="javascript" src="js.js"></script>
+
+ <!-- // №5 -->
+
+ <style>
+    .capsLockOn {
+        color: red;
+    }
+</style>
+
+<input type="text" id="screenType" placeholder="Тут будет ваш текст">
+<button onclick="show()"  id="screenKeyboardShow">Показать/Скрыть экранную клавиатуру</button>
+<div id="screenKeyboard" style="display: none">
+ <button class="key" onclick="addLetter('q')">q</button>
+ <button class="key" onclick="addLetter('w')">w</button>
+ <button class="key" onclick="addLetter('e')">e</button>
+ <button class="key" onclick="addLetter('r')">r</button>
+ <button class="key" onclick="addLetter('t')">t</button>
+ <button class="key" onclick="addLetter('y')">y</button>
+ <button class="key" onclick="addLetter('u')">u</button>
+ <button class="key" onclick="addLetter('i')">i</button>
+ <button class="key" onclick="addLetter('o')">o</button>
+ <button class="key" onclick="addLetter('p')">p</button>
+ <br>
+ <button class="key" onclick="addLetter('a')">a</button>
+ <button class="key" onclick="addLetter('s')">s</button>
+ <button class="key" onclick="addLetter('d')">d</button>
+ <button class="key" onclick="addLetter('f')">f</button>
+ <button class="key" onclick="addLetter('g')">g</button>
+ <button class="key" onclick="addLetter('h')">h</button>
+ <button class="key" onclick="addLetter('j')">j</button>
+ <button class="key" onclick="addLetter('k')">k</button>
+ <button class="key" onclick="addLetter('l')">l</button>
+ <br>
+ <button class="key" onclick="addLetter('z')">z</button>
+ <button class="key" onclick="addLetter('x')">x</button>
+ <button class="key" onclick="addLetter('c')">c</button>
+ <button class="key" onclick="addLetter('v')">v</button>
+ <button class="key" onclick="addLetter('b')">b</button>
+ <button class="key" onclick="addLetter('n')">n</button>
+ <button class="key" onclick="addLetter('m')">m</button>
+ <button class="key" onclick="addLetter('Backspace')">Backspace</button>
+ <button class="key" onclick="toggleCapsLock()">CapsLock</button>
+</div>
+
+ <script type="javascript" src="js.js"></script>
+
+ <!-- // №6 -->
+
+ <style>
+    #days {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #days li {
+        width: 14%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #days .today {
+        background-color: aqua;
+    }
+
+</style>
+<button id="prev">Назад</button>
+<button id="next">Вперед</button>
+<h1 id="monthAndYear"></h1>
+<ul id="days"></ul>
+ <script type="javascript" src="js.js"></script>
+
+ <!-- // №7 -->
+ <input type="text" id="tagInput" placeholder="Введите имя тега">
+ <div id="tagDescription"></div>
+ <script type="javascript" src="js.js"></script>
+
+
+ <!-- // №8 -->
+ <style>
+    * {
+        box-sizing: border-box;
+    }
+    #parent {
+        margin: 0 auto;
+        width: 600px;
+    }
+    #input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    #table {
+        width: 100%;
+    }
+    #table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+</style>
+<div id="parent">
+<label for="input"></label>
+<input id="input" placeholder="введите год и нажмите Enter">
+<table id="table"></table>
+</div>
+<script type="javascript" src="js.js"></script>
+
+ <!-- // №9 -->
+ <h1>Гороскоп</h1>
+ <input type="date" id="birthdate">
+ <button onclick="getHoroscope()">Получить гороскоп</button>
+
+ <div>
+     <input type="radio" id="today" name="date" value="today" checked>
+     <label for="today">Сегодня</label>
+
+     <input type="radio" id="tomorrow" name="date" value="tomorrow">
+     <label for="tomorrow">Завтра</label>
+
+     <input type="radio" id="dayAfterTomorrow" name="date" value="dayAfterTomorrow">
+     <label for="dayAfterTomorrow">Послезавтра</label>
+ </div>
+
+ <div id="horoscopeResult"></div>
+ <script type="javascript" src="js.js"></script>
+
+ <!-- // №10 -->
+ <style>
+    #parent {
+        text-align: center;
+    }
+    #parent > * {
+        margin-bottom: 10px;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+    #text {
+        font-size: 17px;
+        font-style: italic;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    button:not(.active) {
+        display: none;
+    }
+
+    .good {
+        color: green;
+    }
+    .bad {
+        color: red;
+    }
+</style>
+
+<div id="parent">
+<div id="timer">?</div>
+<div id="text"></div>
+<button id="start" class="active">узнать свою судьбу</button>
+<button id="stop">получить предсказание</button>
+</div>  
+    <style>
+    #parent {
+        text-align: center;
+    }
+    #parent > * {
+        margin-bottom: 10px;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+    #text {
+        font-size: 17px;
+        font-style: italic;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    button:not(.active) {
+        display: none;
+    }
+
+    .good {
+        color: green;
+    }
+    .bad {
+        color: red;
+    }
+</style>
+<div id="parent">
+<div id="timer">?</div>
+<div id="text"></div>
+<button id="start" class="active">узнать свою судьбу</button>
+<button id="stop">получить предсказание</button>
+</div>
+<script type="javascript" src="js.js"></script>
+
+ <!-- // №11 -->
+ <style>
+    #parent {
+        position: relative;
+    }
+
+    #elem {
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    #parent ul {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: white;
+        display: none; /* Начально скрываем список */
+    }
+
+    #parent li {
+        border: 1px solid gray;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    #parent li:hover {
+        border: 1px solid black;
+        cursor: pointer;
+    }
+</style>
+
+    <div id="parent">
+        <input id="elem">
+        <ul id="list"></ul>
+    </div>
+
+    <script type="javascript" src="js.js"></script>
+
+
+     <!-- // №12 -->
+
+     <style>
+        .spoiler:not(.active) {
+            display: none;
+        }
+    </style>
+
+<p>
+    абзац с текстом
+</p>
+<p>
+    абзац с текстом
+    <a href="" class="toggle">развернуть спойлер 1</a>
+</p>
+<p class="spoiler">
+    скрытый спойлер 1
+</p>
+<p>
+    абзац с текстом
+</p>
+<p>
+    абзац с текстом
+    <a href="" class="toggle">развернуть спойлер 2</a>
+</p>
+<p class="spoiler">
+    скрытый спойлер 2
+</p>
+<p>
+    абзац с текстом
+</p>
+
+<script type="javascript" src="js.js"></script>
+
+
+     <!-- // №13 -->
+
+     <style>
+        #parent {
+            margin: 0 auto;
+            width: 400px;
+        }
+    
+        .menu a {
+            margin-right: 5px;
+            display: inline-block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            border: 1px solid gray;
+        }
+        .menu a:hover {
+            background: #f8f8f8;
+        }
+        .menu a.active {
+            border-color: transparent;
+            background: #f2f2f2;
+        }
+    
+        .tabs .tab:not(.active) {
+            display: none;
+        }
+        .tabs .tab {
+            padding: 10px;
+            background: #f2f2f2;
+            height: 300px;
+        }
+    </style>
+    
+        <div id="parent">
+            <div class="menu">
+                <a href="" class="active">вкладка 1</a>
+                <a href="">вкладка 2</a>
+                <a href="">вкладка 3</a>
+            </div>
+            <div class="tabs">
+                <div class="tab active">
+                    текст вкладки 1
+                </div>
+                <div class="tab">
+                    текст вкладки 2
+                </div>
+                <div class="tab">
+                    текст вкладки 3
+                </div>
+            </div>
+        </div>
+    
+     <script type="javascript" src="js.js"></script>
+
+     <!-- // №14 -->
+     <style>
+        #parent {
+            margin: 0 auto;
+            width: 400px;
+        }
+        .tab {
+            margin-bottom: 10px;
+        }
+
+        .tab .link a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            background: #f8f8f8;
+            border: 1px solid grey;
+        }
+        .tab .link:hover a {
+            background: #f2f2f2;
+        }
+
+        .tab:not(.active) .text {
+            display: none;
+        }
+        .tab .text {
+            border: 1px dashed grey;
+            border-top: none;
+
+            padding: 10px;
+            height: 300px;
+        }
+    </style>
+
+<div id="parent">
+    <div class="tab active">
+        <div class="link">
+            <a href="#" >вкладка 1</a>
+        </div>
+        <div class="text">
+            текст вкладки 1
+        </div>
+    </div>
+    <div class="tab">
+        <div class="link">
+            <a href="#" >вкладка 2</a>
+        </div>
+        <div class="text">
+            текст вкладки 2
+        </div>
+    </div>
+    <div class="tab">
+        <div class="link">
+            <a href="#" >вкладка 3</a>
+        </div>
+        <div class="text">
+            текст вкладки 3
+        </div>
+    </div>
+</div>
+
+    
+<script type="javascript" src="js.js"></script>
+
+
+ <!-- задания с 15-17 -->
+ <!-- 1 vs 1 -->
+<label for="input"></label>
+<input id="input" type="text" placeholder="Введите город">
+<button id="submit">Отправить</button>
+<div id="message"></div>
+<script type="javascript" src="js.js"></script>
+
+ <!-- 1 vs Al -->
+<label for="input"></label>
+<input id="input" type="text" placeholder="Введите город">
+<button id="submit">Отправить</button>
+<div id="message"></div>
+<script type="javascript" src="js.js"></script>
+
+ <!-- задания с 18-23 -->
+ <style>
+
+    body {
+        text-align: center;
+    }
+
+    #input, #list {
+        display: inline-block;
+    }
+
+    #list {
+        padding: 0;
+        list-style-type: none;
+    }
+    #list span {
+        margin-right: 5px;
+    }
+    #list .remove, #list .mark {
+        color: blue;
+        cursor: pointer;
+    }
+    #list .remove:hover, #list .mark:hover {
+        text-decoration: underline;
+    }
+
+    #list .done .task {
+        text-decoration: line-through;
+    }
+
+</style>
+<div id="wrapper">
+<label for="input"></label>
+<input id="input"><br>
+<ul id="list"></ul>
+</div>
+<script type="javascript" src="js.js"></script>
+
+
+ <!-- задания с 24-29 -->
+ <style>
+    * {
+        box-sizing: border-box;
+    }
+    #parent {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    #form {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    #form input {
+        padding: 8px;
+        width: 24%;
+        margin: 0 0.5% 10px 0.5%;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 7px;
+    }
+
+    #table {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #table td, #table th {
+        padding: 8px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    #table td.remove {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    #table td.remove:hover {
+        text-decoration: none;
+    }
+
+    #result {
+        text-align: right;
+        margin-right: 10px;
+    }
+</style>
+<div id="parent">
+<div id="form">
+    <input id="name" class="name" placeholder="название">
+    <input id="price" class="price" placeholder="цена">
+    <input id="amount" class="amount" placeholder="количество">
+    <input id="add" type="button" value="добавить">
+</div>
+
+<h2>Таблица продуктов:</h2>
+<table id="table">
+    <tr>
+        <th>название</th>
+        <th>цена</th>
+        <th>кол-во</th>
+        <th>сумма</th>
+        <th>удалить</th>
+    </tr>
+</table>
+<div id="result">
+    общий итог: <span id="total">0</span>
+</div>
+</div>
+<script type="javascript" src="js.js"></script>
+
+
+ <!-- задания с 30-36 -->
+ <!-- №30 -->
+ <style>
+    .right {
+        border: 10px solid green;
+    }
+    .wrong {
+        border: 10px solid red;
+    }
+</style>
+
+<div id="test">
+<div>
+    <p>вопрос 1?</p>
+    <input data-right="ответ 1">
+</div>
+<div>
+    <p>вопрос 2?</p>
+    <input data-right="ответ 2">
+</div>
+<div>
+    <p>вопрос 3?</p>
+    <input data-right="ответ 3">
+</div>
+</div>
+<button id="check" style="margin-top: 10px">Проверить ответы</button>
+<script type="javascript" src="js.js"></script>
+
+
+ <!-- №31 -->
+
+<div id="test">
+    <div>
+        <p>вопрос 1?</p>
+        <input>
+    </div>
+    <div>
+        <p>вопрос 2?</p>
+        <input>
+    </div>
+    <div>
+        <p>вопрос 3?</p>
+        <input>
+    </div>
+
+    <button id="button">проверить ответы</button>
+</div>
+<button id="check" style="margin-top: 10px">Проверить ответы</button>
+<script type="javascript" src="js.js"></script>
+
+
+
+ <!-- №32 -->
+ <style>
+    .right {
+        border: 10px solid green;
+    }
+    .wrong {
+        border: 10px solid red;
+    }
+</style>
+<div id="test"></div>
+<button id="button" style="margin-top: 10px">проверить ответы</button>
+<script type="javascript" src="js.js"></script>
+
+ <!-- №33 -->
+ <style>
+    .right {
+        border: 1px solid green;
+    }
+    .wrong {
+        border: 1px solid red;
+    }
+</style>
+<body>
+<div id="test">
+    <div>
+        <p>вопрос 1?</p>
+        <input>
+    </div>
+    <div>
+        <p>вопрос 2?</p>
+        <input>
+    </div>
+    <div>
+        <p>вопрос 3?</p>
+        <input>
+    </div>
+
+    <button id="button">проверить ответы</button>
+</div>
+<script type="javascript" src="js.js"></script>
+
+
+
+ <!-- №34 -->
+ <style>
+    .right {
+        border: 10px solid green;
+    }
+    .wrong {
+        border: 10px solid red;
+    }
+</style>
+
+
+<div id="test">
+<div>
+    <p>вопрос 1?</p>
+    <label>
+        <input type="radio" name="1" data-right>
+        вариант 1
+    </label>
+    <label>
+        <input type="radio" name="1">
+        вариант 2
+    </label>
+    <label>
+        <input type="radio" name="1">
+        вариант 3
+    </label>
+</div>
+<div>
+    <p>вопрос 2?</p>
+    <label>
+        <input type="radio" name="2">
+        вариант 1
+    </label>
+    <label>
+        <input type="radio" name="2" data-right>
+        вариант 2
+    </label>
+    <label>
+        <input type="radio" name="2">
+        вариант 3
+    </label>
+</div>
+<div>
+    <p>вопрос 3?</p>
+    <label>
+        <input type="radio" name="3">
+        вариант 1
+    </label>
+    <label>
+        <input type="radio" name="3">
+        вариант 2
+    </label>
+    <label>
+        <input type="radio" name="3" data-right>
+        вариант 3
+    </label>
+</div>
+</div>
+<button id="button">Проверить ответы</button>
+ <script type="javascript" src="js.js"></script>
+
+
+ <!-- №35 -->
+ <style>
+    #test {
+        font-family: Arial, sans-serif;
+    }
+
+    #test div {
+        margin-bottom: 20px;
+    }
+
+    #test p {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    #test label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    #test input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    #button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+
+    #button:hover {
+        background-color: #0056b3;
+    }
+    .right {
+        border: 1px solid green;
+    }
+    .wrong {
+        border: 1px solid red;
+    }
+
+</style>
+
+<div id="test">
+    <div>
+        <p>вопрос 1?</p>
+        <label>
+            <input type="radio" name="1" data-right>
+            вариант 1
+        </label>
+        <label>
+            <input type="radio" name="1">
+            вариант 2
+        </label>
+        <label>
+            <input type="radio" name="1">
+            вариант 3
+        </label>
+    </div>
+    <div>
+        <p>вопрос 2?</p>
+        <label>
+            <input type="radio" name="2">
+            вариант 1
+        </label>
+        <label>
+            <input type="radio" name="2" data-right>
+            вариант 2
+        </label>
+        <label>
+            <input type="radio" name="2">
+            вариант 3
+        </label>
+    </div>
+    <div>
+        <p>вопрос 3?</p>
+        <label>
+            <input type="radio" name="3">
+            вариант 1
+        </label>
+        <label>
+            <input type="radio" name="3">
+            вариант 2
+        </label>
+        <label>
+            <input type="radio" name="3" data-right>
+            вариант 3
+        </label>
+    </div>
+    <button id="button">проверить ответы</button>
+</div>
+<script type="javascript" src="js.js"></script>
+
+
+
+ <!-- №36 -->
+<style>
+    .right {
+        border: 10px solid green;
+    }
+    .wrong {
+        border: 10px solid red;
+    }
+</style>
+<div id="test"></div>
+<button id="button">проверить ответы</button>
+<script type="javascript" src="js.js"></script>
+
+
+
+ <!-- задания с 41-46-->
+ <style>
+    #field td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<table id="field">
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+<script type="javascript" src="js.js"></script>
+
+ <!-- задания с 47-51-->
+
+
+ <style>
+    #field td {
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+    }
+    .red {
+        background: red;
+    }
+    .green {
+        background: green;
+    }
+    .blue {
+        background: blue;
+    }
+</style>
+<table id="field"></table>
+<p id="clicks">Количество кликов: 0</p>
+<script type="javascript" src="js.js"></script>
+
+ <!-- задания с 52-62-->
+
+ <style>
+    #parent {
+        text-align: center;
+    }
+    #calendar {
+        display: inline-block;
+    }
+    #calendar td,
+    #calendar th {
+        padding: 10px;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    #calendar .nav,
+    #calendar .info {
+        text-align: center;
+    }
+    #calendar a {
+        color: blue;
+        font-size: 25px;
+        text-decoration: none;
+    }
+    #calendar a:hover {
+        color: red;
+    }
+
+    #calendar .active {
+        color: red;
+    }
+
+</style>
+<div id="parent">
+<div id="calendar">
+    <div class="info">Янв 2020</div>
+    <table>
+        <thead>
+        <tr>
+            <th>пн</th>
+            <th>вт</th>
+            <th>ср</th>
+            <th>чт</th>
+            <th>пт</th>
+            <th>сб</th>
+            <th>вс</th>
+        </tr>
+        </thead>
+        <tbody class="body"></tbody>
+    </table>
+    <div class="nav">
+        <a href="#" class="prev">←</a>
+        <a href="#" class="next">→</a>
+    </div>
+</div>
+</div>
+<script type="javascript" src="js.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
